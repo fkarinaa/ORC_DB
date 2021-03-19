@@ -1,0 +1,49 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+
+<VBox alignment="BOTTOM_RIGHT" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" id="VBox"  fx:controller="sample.Controller">
+<children>
+    <MenuBar fx:id="Help" VBox.vgrow="NEVER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Undo" />
+                    <MenuItem mnemonicParsing="false" text="Redo" />
+                    <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem mnemonicParsing="false" text="Cut" />
+                    <MenuItem mnemonicParsing="false" text="Copy" />
+                    <MenuItem mnemonicParsing="false" text="Paste" />
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                    <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem mnemonicParsing="false" text="Select All" />
+                    <MenuItem mnemonicParsing="false" text="Unselect All" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <children>
+            <Label fx:id="work" alignment="CENTER" layoutX="245.0" layoutY="26.0" text="Working with data" textAlignment="CENTER" textFill="#003c69" wrapText="false">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <Button fx:id="open" layoutX="455.0" layoutY="147.0" mnemonicParsing="false"  onAction="#openAction" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: ec8434;" text="open" textFill="#fdf6e5" />
+            <TextField fx:id="text_field" layoutX="105.0" layoutY="147.0" prefHeight="26.0" prefWidth="334.0" style="-fx-border-color: #003C69;" />
+            <Button fx:id="start" layoutX="223.0" layoutY="274.0" mnemonicParsing="false"  prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #003C69;" text="start" textFill="#fdf6e5" />
+        </children>
+    </AnchorPane>
+</children>
+</VBox>
